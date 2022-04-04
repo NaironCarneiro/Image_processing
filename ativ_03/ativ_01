@@ -54,12 +54,12 @@ while(True):
 #Contraste
     elif k == ord('s'):
         contraste=min(contraste+0.10,255)
-        print("aumenta",float(contraste))
+        # print("aumenta",float(contraste))
         if(contraste > 1):
             result=ajuste_contraste(imagem,contraste)
     elif k == ord('x'):
         contraste=max(contraste-0.10,0)
-        print("diminui",float(contraste))
+        # print("diminui",float(contraste))
         if(contraste > 0 and contraste < 1):
             result=ajuste_contraste(imagem,contraste)
 #Negativo
