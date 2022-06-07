@@ -21,9 +21,11 @@ final_logo = cv2.add(img_logo1,img_ifma1)
 img_ifma[0:rows, 0:cols ] = final_logo
 
 telea = cv2.inpaint(final_logo,mask,3,cv2.INPAINT_TELEA)
-cv2.imshow('telea 1',final_logo)
+# cv2.imshow('telea 1',final_logo)
 img_ifma[0:rows, 0:cols ] = telea
-cv2.imshow('telea 2',telea)
-cv2.imshow('final',img_ifma)
+# cv2.imshow('telea 2',telea)
+# cv2.imshow('final',img_ifma)
+cv2.imshow('img 1', mask)
+# cv2.imshow('img logo 2',img_logo1)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
