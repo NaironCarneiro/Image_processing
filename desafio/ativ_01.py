@@ -22,7 +22,6 @@ def filtro(image, objeto, x, y, w, h):
     overlay = objeto[:, :, :3]
     mask = np.dstack((alpha, alpha, alpha))
     roi = image[(y-h):(y-h) + rows, (x-w):(x-w) + cols]
-    # print(roi)
     output = roi * (1 - mask) + overlay * mask
     image[(y-h):(y-h) + rows, (x-w):(x-w) + cols] = output
     return image
