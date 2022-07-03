@@ -4,6 +4,7 @@ import cv2
 img_logo = cv2.imread('logo-if.jpg')
 img_ifma = cv2.imread('ifma-caxias.jpg')
 
+
 #Redimensiona imagem
 img_logo = cv2.resize(img_logo,(160,80),interpolation=cv2.INTER_AREA)
 
