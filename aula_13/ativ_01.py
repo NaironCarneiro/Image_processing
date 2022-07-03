@@ -3,7 +3,7 @@ import numpy as np
 face_cascade = cv2.CascadeClassifier('classifiers/haarcascade_frontalface_default.xml')
 
 count = 0
-capture = cv2.VideoCapture("videoG1.mp4")
+capture = cv2.VideoCapture("IFMA Campus Caxias.mp4")
 while True:
 	ret, frame = capture.read()
 	if ret is True:
